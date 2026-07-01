@@ -1,0 +1,818 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SBI INTERNET | Live TV</title>
+
+<link rel="icon" href="logo.jpg">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+
+background:#07111f;
+color:white;
+overflow-x:hidden;
+
+}
+
+body::before{
+
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:url(background.jpg) center center/cover no-repeat fixed;
+filter:blur(5px);
+z-index:-2;
+
+}
+
+body::after{
+
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.75);
+z-index:-1;
+
+}
+
+header{
+
+position:sticky;
+top:0;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 35px;
+background:rgba(0,0,0,.45);
+backdrop-filter:blur(18px);
+border-bottom:1px solid rgba(255,255,255,.1);
+z-index:999;
+
+}
+
+.logo{
+
+display:flex;
+align-items:center;
+gap:12px;
+font-size:30px;
+font-weight:bold;
+color:#00E5FF;
+
+}
+
+.logo img{
+
+width:60px;
+height:60px;
+border-radius:50%;
+box-shadow:0 0 20px cyan;
+
+}
+
+nav a{
+
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:bold;
+
+}
+
+nav a:hover{
+
+color:#00E5FF;
+
+}
+
+.notice{
+
+background:#0099ff;
+padding:12px;
+font-weight:bold;
+
+}
+
+.hero{
+
+height:70vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+
+}
+
+.hero-box{
+
+max-width:900px;
+padding:50px;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(20px);
+border-radius:25px;
+box-shadow:0 0 35px rgba(0,255,255,.25);
+
+}
+
+.hero h1{
+
+font-size:60px;
+color:#00E5FF;
+text-shadow:0 0 15px cyan;
+
+}
+
+.hero p{
+
+font-size:22px;
+margin:20px 0;
+
+}
+
+.btn{
+
+display:inline-block;
+padding:15px 35px;
+background:linear-gradient(45deg,#00c6ff,#0072ff);
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-weight:bold;
+
+}
+
+.btn:hover{
+
+box-shadow:0 0 25px cyan;
+
+}
+
+.search{
+
+display:block;
+width:90%;
+max-width:700px;
+margin:30px auto;
+padding:15px;
+font-size:18px;
+border:none;
+border-radius:35px;
+background:rgba(255,255,255,.1);
+color:white;
+
+}
+
+.grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+padding:30px;
+
+}
+
+.card{
+
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(18px);
+border-radius:20px;
+padding:25px;
+text-align:center;
+transition:.4s;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+box-shadow:0 0 30px cyan;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<img src="logo.jpg">
+
+<span>SBI INTERNET</span>
+
+</div>
+
+<nav>
+
+<a href="index.html">🏠 Home</a>
+
+<a href="#live">📺 Live TV</a>
+
+<a href="#sports">⚽ Sports</a>
+
+<a href="#ftp">📁 FTP</a>
+
+</nav>
+
+</header>
+
+<marquee class="notice" scrollamount="8">
+
+📺 Welcome to SBI INTERNET LIVE TV | ⚽ FIFA LIVE | 📁 Circle FTP | 🎬 CTG Movies | 📺 BTV Live | 📺 JagoBD | 🟢 All Servers Online
+
+</marquee>
+
+<section class="hero">
+
+<div class="hero-box">
+
+<h1>📺 SBI INTERNET LIVE TV</h1>
+
+<p>
+
+Watch Live TV, Sports, Movies & FTP Servers from one place.
+
+</p>
+
+<a href="#live" class="btn">
+
+📺 Watch Now
+
+</a>
+
+</div>
+
+</section>
+
+<input type="text" class="search" placeholder="🔍 Search Server...">
+
+<h2 id="live" style="text-align:center;color:#00E5FF;font-size:40px;">
+
+🏆 Featured Servers
+
+</h2>
+
+<div class="grid"><!-- FIFA LIVE -->
+
+<div class="card" style="border:2px solid gold;box-shadow:0 0 30px gold;">
+
+<span style="background:red;padding:6px 12px;border-radius:20px;font-size:14px;">
+🔴 LIVE
+</span>
+
+<h2 style="color:gold;margin-top:15px;">
+⚽ FIFA LIVE
+</h2>
+
+<p>Watch Live Football HD</p>
+
+<a href="http://iptvidn.com/" target="_blank" class="btn">
+📺 Server 1
+</a>
+
+<br><br>
+
+<a href="https://www.mojaloss.stream/" target="_blank" class="btn">
+⚽ Server 2
+</a>
+
+</div>
+
+<!-- BTV Live -->
+
+<div class="card">
+
+<span style="color:lime;">🟢 Online</span>
+
+<h2>📺 BTV LIVE</h2>
+
+<p>Bangladesh Television Official</p>
+
+<a href="https://www.btvlive.gov.bd/" target="_blank" class="btn">
+
+Open Server
+
+</a>
+
+</div>
+
+<!-- JagoBD -->
+
+<div class="card">
+
+<span style="color:lime;">🟢 Online</span>
+
+<h2>📺 JagoBD</h2>
+
+<p>Bangladesh Live TV</p>
+
+<a href="https://www.jagobd.com/" target="_blank" class="btn">
+
+Open Server
+
+</a>
+
+</div>
+
+<!-- CTG Movies -->
+
+<div class="card">
+
+<span style="color:lime;">🟢 Online</span>
+
+<h2>🎬 CTG Movies</h2>
+
+<p>Bangla & Hollywood Movies</p>
+
+<a href="https://ctgmovies.com/" target="_blank" class="btn">
+
+Open Server
+
+</a>
+
+</div>
+
+<!-- Circle FTP -->
+
+<div class="card">
+
+<span style="color:lime;">🟢 Online</span>
+
+<h2>📁 Circle FTP</h2>
+
+<p>Download Server</p>
+
+<a href="http://new.circleftp.net/" target="_blank" class="btn">
+
+Open Server
+
+</a>
+
+</div>
+
+<!-- Circle FTP 4 -->
+
+<div class="card">
+
+<span style="color:lime;">🟢 Online</span>
+
+<h2>📁 Circle FTP 4</h2>
+
+<p>Mirror Download Server</p>
+
+<a href="http://ftp4.circleftp.net/" target="_blank" class="btn">
+
+Open Server
+
+</a>
+
+</div>
+
+<!-- Mojaloss -->
+
+<div class="card">
+
+<span style="color:lime;">🟢 Online</span>
+
+<h2>⚽ Mojaloss</h2>
+
+<p>Sports Streaming Server</p>
+
+<a href="https://www.mojaloss.stream/" target="_blank" class="btn">
+
+Open Server
+
+</a>
+
+</div><!-- ================= SPORTS TV ================= -->
+
+<div class="card">
+
+<span style="color:lime;">🟢 Online</span>
+
+<h2>🏏 Sports TV</h2>
+
+<p>Live Cricket & Football</p>
+
+<a href="https://www.jagobd.com/" target="_blank" class="btn">
+
+Watch Now
+
+</a>
+
+</div>
+
+<!-- ================= NEWS TV ================= -->
+
+<div class="card">
+
+<span style="color:lime;">🟢 Online</span>
+
+<h2>📰 News TV</h2>
+
+<p>24 Hours News Channels</p>
+
+<a href="https://www.jagobd.com/" target="_blank" class="btn">
+
+Watch Now
+
+</a>
+
+</div>
+
+<!-- ================= KIDS TV ================= -->
+
+<div class="card">
+
+<span style="color:lime;">🟢 Online</span>
+
+<h2>👶 Kids TV</h2>
+
+<p>Kids Entertainment</p>
+
+<a href="https://www.jagobd.com/" target="_blank" class="btn">
+
+Watch Now
+
+</a>
+
+</div>
+
+<!-- ================= ISLAMIC TV ================= -->
+
+<div class="card">
+
+<span style="color:lime;">🟢 Online</span>
+
+<h2>🕌 Islamic TV</h2>
+
+<p>Islamic Live Channels</p>
+
+<a href="https://www.jagobd.com/" target="_blank" class="btn">
+
+Watch Now
+
+</a>
+
+</div>
+
+<!-- ================= MUSIC ================= -->
+
+<div class="card">
+
+<span style="color:lime;">🟢 Online</span>
+
+<h2>🎵 Music TV</h2>
+
+<p>Music & Entertainment</p>
+
+<a href="https://www.youtube.com/" target="_blank" class="btn">
+
+Watch Now
+
+</a>
+
+</div>
+
+<!-- ================= MOVIE ZONE ================= -->
+
+<div class="card">
+
+<span style="color:lime;">🟢 Online</span>
+
+<h2>🎬 Movie Zone</h2>
+
+<p>Bangla, Hindi & Hollywood Movies</p>
+
+<a href="https://ctgmovies.com/" target="_blank" class="btn">
+
+Watch Now
+
+</a>
+
+</div>
+
+<!-- ================= FTP DOWNLOAD ================= -->
+
+<div class="card">
+
+<span style="color:lime;">🟢 Online</span>
+
+<h2>💻 FTP Download</h2>
+
+<p>Software, Games & Movies</p>
+
+<a href="http://new.circleftp.net/" target="_blank" class="btn">
+
+Open FTP
+
+</a>
+
+</div>
+
+<!-- ================= SERVER STATUS ================= -->
+
+<div class="card">
+
+<h2 style="color:#00E5FF;">📡 Server Status</h2>
+
+<h3 style="color:lime;">🟢 ONLINE</h3>
+
+<p>Available Servers: <span id="serverCount">8+</span></p>
+
+<p>Server Health: Excellent</p>
+
+</div>
+
+<!-- ================= LIVE CLOCK ================= -->
+
+<div class="card">
+
+<h2 style="color:#00E5FF;">🕒 Bangladesh Time</h2>
+
+<h1 id="clock">00:00:00</h1>
+
+<p>Asia/Dhaka</p>
+
+</div>
+
+<script>
+
+function updateClock(){
+
+const now=new Date();
+
+document.getElementById("clock").innerHTML=
+
+now.toLocaleTimeString("en-GB",{
+
+timeZone:"Asia/Dhaka"
+
+});
+
+}
+
+setInterval(updateClock,1000);
+
+updateClock();
+
+</script></div>
+
+<style>
+
+/* Floating Buttons */
+
+.whatsapp{
+
+position:fixed;
+right:20px;
+bottom:20px;
+width:60px;
+height:60px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+text-decoration:none;
+color:white;
+box-shadow:0 0 20px #25D366;
+z-index:999;
+
+}
+
+.call{
+
+position:fixed;
+right:20px;
+bottom:95px;
+width:60px;
+height:60px;
+background:#0099ff;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:28px;
+text-decoration:none;
+color:white;
+box-shadow:0 0 20px #0099ff;
+z-index:999;
+
+}
+
+.home{
+
+position:fixed;
+right:20px;
+bottom:170px;
+width:60px;
+height:60px;
+background:#ff9800;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:28px;
+text-decoration:none;
+color:white;
+box-shadow:0 0 20px orange;
+z-index:999;
+
+}
+
+#topBtn{
+
+position:fixed;
+left:20px;
+bottom:20px;
+width:60px;
+height:60px;
+background:#ff1744;
+border-radius:50%;
+display:none;
+justify-content:center;
+align-items:center;
+font-size:28px;
+text-decoration:none;
+color:white;
+box-shadow:0 0 20px red;
+z-index:999;
+
+}
+
+footer{
+
+margin-top:60px;
+padding:40px;
+background:rgba(0,0,0,.7);
+backdrop-filter:blur(15px);
+text-align:center;
+
+}
+
+footer h2{
+
+color:#00E5FF;
+margin-bottom:15px;
+
+}
+
+footer p{
+
+margin:8px 0;
+color:#ddd;
+
+}
+
+.social a{
+
+display:inline-block;
+margin:8px;
+padding:12px 20px;
+background:#00C3FF;
+color:white;
+border-radius:10px;
+text-decoration:none;
+transition:.3s;
+
+}
+
+.social a:hover{
+
+background:#007bff;
+transform:scale(1.08);
+
+}
+
+</style>
+
+<footer>
+
+<h2>📺 SBI INTERNET LIVE TV</h2>
+
+<p>Mirpur, Dhaka, Bangladesh</p>
+
+<p>📞 01643473915 | 01643473914</p>
+
+<p>💳 bKash : 01643473915</p>
+
+<p>📧 sbiinternet@gmail.com</p>
+
+<div class="social">
+
+<a href="#">📘 Facebook</a>
+
+<a href="#">▶ YouTube</a>
+
+<a href="#">💬 Messenger</a>
+
+</div>
+
+<p style="margin-top:20px;">
+
+© 2026 SBI INTERNET | All Rights Reserved
+
+</p>
+
+</footer>
+
+<a href="https://wa.me/8801643473915" class="whatsapp" target="_blank">
+💬
+</a>
+
+<a href="tel:01643473915" class="call">
+📞
+</a>
+
+<a href="index.html" class="home">
+🏠
+</a>
+
+<a href="#" id="topBtn">
+⬆
+</a>
+
+<script>
+
+/* Search */
+
+const search=document.querySelector(".search");
+
+search.addEventListener("keyup",function(){
+
+let value=this.value.toLowerCase();
+
+let cards=document.querySelectorAll(".card");
+
+cards.forEach(card=>{
+
+card.style.display=card.innerText.toLowerCase().includes(value)
+?"block":"none";
+
+});
+
+});
+
+/* Scroll Top */
+
+const topBtn=document.getElementById("topBtn");
+
+window.onscroll=function(){
+
+if(document.documentElement.scrollTop>250){
+
+topBtn.style.display="flex";
+
+}else{
+
+topBtn.style.display="none";
+
+}
+
+}
+
+topBtn.onclick=function(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+}
+
+</script>
+
+</body>
+</html>
