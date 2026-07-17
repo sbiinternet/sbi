@@ -1,11 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SBI INTERNET | Dashboard</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>SBI INTERNET Dashboard</title>
 
 <style>
 
@@ -13,78 +12,58 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Poppins',sans-serif;
+font-family:Arial;
 }
 
 body{
-background:#eef2f7;
+background:#edf2f7;
 display:flex;
 }
 
 .sidebar{
-width:260px;
+width:240px;
 height:100vh;
 background:#0f172a;
+color:#fff;
 position:fixed;
-left:0;
-top:0;
 overflow:auto;
 }
 
 .logo{
-padding:25px;
+padding:20px;
 text-align:center;
-color:#fff;
-font-size:26px;
+font-size:24px;
 font-weight:bold;
-background:#172554;
+background:#1e293b;
 }
 
 .sidebar a{
 display:block;
-padding:16px 22px;
+padding:15px 20px;
 text-decoration:none;
-color:#dbeafe;
+color:white;
 transition:.3s;
-font-size:15px;
 }
 
 .sidebar a:hover{
 background:#2563eb;
-padding-left:30px;
 }
 
 .main{
-margin-left:260px;
+margin-left:240px;
 width:100%;
+padding:20px;
 }
 
-.topbar{
-height:70px;
-background:#fff;
+.header{
+background:white;
+padding:20px;
+border-radius:10px;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:0 25px;
+margin-bottom:20px;
 box-shadow:0 2px 10px rgba(0,0,0,.1);
-}
-
-.search input{
-width:320px;
-padding:10px;
-border:1px solid #ccc;
-border-radius:8px;
-}
-
-.profile{
-display:flex;
-align-items:center;
-gap:20px;
-font-size:18px;
-}
-
-.content{
-padding:25px;
 }
 
 .cards{
@@ -94,20 +73,52 @@ gap:20px;
 }
 
 .card{
-background:#fff;
-padding:25px;
-border-radius:15px;
-box-shadow:0 5px 20px rgba(0,0,0,.08);
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
 }
 
-.card h4{
-color:#666;
-margin-bottom:10px;
+.card h3{
+font-size:16px;
+color:#555;
 }
 
-.card h2{
+.card h1{
+margin-top:10px;
 color:#2563eb;
-font-size:32px;
+}
+
+table{
+width:100%;
+margin-top:25px;
+background:white;
+border-collapse:collapse;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+th{
+background:#2563eb;
+color:white;
+padding:14px;
+}
+
+td{
+padding:12px;
+text-align:center;
+border-bottom:1px solid #eee;
+}
+
+.online{
+color:green;
+font-weight:bold;
+}
+
+.offline{
+color:red;
+font-weight:bold;
 }
 
 </style>
@@ -119,860 +130,97 @@ font-size:32px;
 <div class="sidebar">
 
 <div class="logo">
-SBI INTERNET
+🌐 SBI INTERNET
 </div>
 
-<a href="dashboard.html">🏠 Dashboard</a>
-
-<a href="customers.html">👥 Customers</a>
-
-<a href="billing.html">💳 Billing</a>
-
-<a href="payments.html">💰 Payments</a>
-
-<a href="mikrotik.html">📡 MikroTik</a>
-
-<a href="reports.html">📊 Reports</a>
-
-<a href="staff.html">👨‍💼 Staff</a>
-
-<a href="profile.html">👤 Profile</a>
-
-<a href="settings.html">⚙ Settings</a>
-
-<a href="index.html">🚪 Logout</a>
+<a href="#">🏠 Dashboard</a>
+<a href="#">👥 Customers</a>
+<a href="#">🟢 Online User</a>
+<a href="#">🔴 Offline User</a>
+<a href="#">🌐 MikroTik</a>
+<a href="#">💰 Billing</a>
+<a href="#">💳 Payments</a>
+<a href="#">📊 Reports</a>
+<a href="#">👨‍💼 Staff</a>
+<a href="#">⚙ Settings</a>
 
 </div>
 
 <div class="main">
 
-<div class="topbar">
+<div class="header">
 
-<div class="search">
-<input type="text" placeholder="Search Customer...">
-</div>
+<h2>Dashboard</h2>
 
-<div class="profile">
-🔔
-👤 Admin
-</div>
+<h3>Welcome Admin</h3>
 
 </div>
-
-<div class="content">
-
-<h2>Dashboard Overview</h2>
-
-<br>
 
 <div class="cards">
 
 <div class="card">
-<h4>Total Customers</h4>
-<h2>250</h2>
+<h3>Total Customer</h3>
+<h1>250</h1>
 </div>
 
 <div class="card">
-<h4>Online Users</h4>
-<h2 style="color:green;">230</h2>
+<h3>Online Customer</h3>
+<h1 style="color:green;">180</h1>
 </div>
 
 <div class="card">
-<h4>Offline Users</h4>
-<h2 style="color:red;">20</h2>
+<h3>Offline Customer</h3>
+<h1 style="color:red;">70</h1>
 </div>
 
 <div class="card">
-<h4>Monthly Collection</h4>
-<h2>৳52,000</h2>
+<h3>Today's Collection</h3>
+<h1>৳25,000</h1>
 </div>
 
-</div>
-<br><br>
-
-<div style="display:grid;grid-template-columns:2fr 1fr;gap:20px;">
-
-<div style="background:#fff;padding:20px;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,.08);">
-
-<h3>📡 Router Status</h3>
-
-<br>
-
-<table width="100%" cellpadding="10">
-
-<tr>
-<td>Router Name</td>
-<td><b>MikroTik RB5009</b></td>
-</tr>
-
-<tr>
-<td>Status</td>
-<td style="color:green;"><b>🟢 Online</b></td>
-</tr>
-
-<tr>
-<td>CPU Usage</td>
-<td>18%</td>
-</tr>
-
-<tr>
-<td>RAM Usage</td>
-<td>42%</td>
-</tr>
-
-<tr>
-<td>Uptime</td>
-<td>12 Days 08 Hours</td>
-</tr>
-
-<tr>
-<td>Active PPPoE</td>
-<td>230 Users</td>
-</tr>
-
-<tr>
-<td>Bandwidth</td>
-<td>850 Mbps</td>
-</tr>
-
-</table>
-
+<div class="card">
+<h3>Monthly Collection</h3>
+<h1>৳4,85,000</h1>
 </div>
 
-<div style="background:#fff;padding:20px;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,.08);">
-
-<h3>🔔 Notifications</h3>
-
-<br>
-
-<p>✅ Bill Collection Successful</p>
-<hr>
-
-<p>⚠️ 12 Customers Due</p>
-<hr>
-
-<p>📡 MikroTik Connected</p>
-<hr>
-
-<p>🟢 230 Users Online</p>
-<hr>
-
-<p>🔴 20 Users Offline</p>
-
+<div class="card">
+<h3>Due Amount</h3>
+<h1 style="color:red;">৳52,000</h1>
 </div>
 
 </div>
 
-<br>
+<table>
 
-<div style="background:#fff;padding:20px;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,.08);">
-
-<h3>💰 Recent Payments</h3>
-
-<br>
-
-<table width="100%" border="0" cellpadding="12">
-
-<tr style="background:#2563eb;color:#fff;">
-<th>Customer</th>
+<tr>
+<th>Name</th>
 <th>Package</th>
-<th>Amount</th>
 <th>Status</th>
+<th>Bill</th>
 </tr>
 
 <tr>
 <td>Rahim</td>
 <td>30 Mbps</td>
-<td>৳600</td>
-<td style="color:green;">Paid</td>
+<td class="online">Online</td>
+<td>Paid</td>
 </tr>
 
 <tr>
 <td>Karim</td>
 <td>20 Mbps</td>
-<td>৳500</td>
-<td style="color:red;">Due</td>
+<td class="offline">Offline</td>
+<td>Due</td>
 </tr>
 
 <tr>
 <td>Hasan</td>
 <td>50 Mbps</td>
-<td>৳1000</td>
-<td style="color:green;">Paid</td>
+<td class="online">Online</td>
+<td>Paid</td>
 </tr>
 
 </table>
-
-</div>
-<br>
-
-<div style="display:grid;grid-template-columns:2fr 1fr;gap:20px;">
-
-<div style="background:#fff;padding:20px;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,.08);">
-
-<h3>📈 Network Traffic</h3>
-
-<div style="margin-top:20px;height:280px;background:linear-gradient(180deg,#dbeafe,#ffffff);border-radius:12px;display:flex;align-items:flex-end;justify-content:space-around;padding:20px;">
-
-<div style="width:35px;height:90px;background:#2563eb;border-radius:6px;"></div>
-
-<div style="width:35px;height:140px;background:#2563eb;border-radius:6px;"></div>
-
-<div style="width:35px;height:120px;background:#2563eb;border-radius:6px;"></div>
-
-<div style="width:35px;height:210px;background:#2563eb;border-radius:6px;"></div>
-
-<div style="width:35px;height:170px;background:#2563eb;border-radius:6px;"></div>
-
-<div style="width:35px;height:240px;background:#2563eb;border-radius:6px;"></div>
-
-<div style="width:35px;height:190px;background:#2563eb;border-radius:6px;"></div>
-
-</div>
-
-</div>
-
-<div style="background:#fff;padding:20px;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,.08);">
-
-<h3>🌐 Internet Usage</h3>
-
-<br>
-
-<p>⬇ Download</p>
-
-<div style="width:100%;height:10px;background:#ddd;border-radius:20px;">
-<div style="width:78%;height:10px;background:#2563eb;border-radius:20px;"></div>
-</div>
-
-<br>
-
-<p>⬆ Upload</p>
-
-<div style="width:100%;height:10px;background:#ddd;border-radius:20px;">
-<div style="width:42%;height:10px;background:#16a34a;border-radius:20px;"></div>
-</div>
-
-<br>
-
-<p>Bandwidth Capacity</p>
-
-<div style="width:100%;height:10px;background:#ddd;border-radius:20px;">
-<div style="width:63%;height:10px;background:#f59e0b;border-radius:20px;"></div>
-</div>
-
-</div>
-
-</div>
-
-<br>
-
-<div style="background:#fff;padding:20px;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,.08);">
-
-<h3>⚠ Due Customers</h3>
-
-<br>
-
-<table width="100%" cellpadding="10">
-
-<tr style="background:#ef4444;color:white;">
-
-<th>Name</th>
-
-<th>Package</th>
-
-<th>Due</th>
-
-<th>Status</th>
-
-</tr>
-
-<tr>
-
-<td>Karim</td>
-
-<td>20 Mbps</td>
-
-<td>৳500</td>
-
-<td style="color:red;">Unpaid</td>
-
-</tr>
-
-<tr>
-
-<td>Jamal</td>
-
-<td>30 Mbps</td>
-
-<td>৳600</td>
-
-<td style="color:red;">Unpaid</td>
-
-</tr>
-
-<tr>
-
-<td>Rafiq</td>
-
-<td>50 Mbps</td>
-
-<td>৳1000</td>
-
-<td style="color:red;">Unpaid</td>
-
-</tr>
-
-</table>
-
-</div>
-<br>
-
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
-
-<div style="background:#fff;padding:20px;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,.08);">
-
-<h3>👥 New Customers</h3>
-
-<table width="100%" cellpadding="10">
-
-<tr style="background:#2563eb;color:white;">
-<th>Name</th>
-<th>Package</th>
-<th>Date</th>
-</tr>
-
-<tr>
-<td>Rakib</td>
-<td>30 Mbps</td>
-<td>17 Jul</td>
-</tr>
-
-<tr>
-<td>Sohel</td>
-<td>50 Mbps</td>
-<td>16 Jul</td>
-</tr>
-
-<tr>
-<td>Nahid</td>
-<td>100 Mbps</td>
-<td>15 Jul</td>
-</tr>
-
-</table>
-
-</div>
-
-<div style="background:#fff;padding:20px;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,.08);">
-
-<h3>🎫 Support Tickets</h3>
-
-<table width="100%" cellpadding="10">
-
-<tr style="background:#16a34a;color:white;">
-<th>Customer</th>
-<th>Issue</th>
-<th>Status</th>
-</tr>
-
-<tr>
-<td>Rahim</td>
-<td>No Internet</td>
-<td style="color:red;">Open</td>
-</tr>
-
-<tr>
-<td>Karim</td>
-<td>Slow Speed</td>
-<td style="color:orange;">Pending</td>
-</tr>
-
-<tr>
-<td>Hasan</td>
-<td>Resolved</td>
-<td style="color:green;">Closed</td>
-</tr>
-
-</table>
-
-</div>
-
-</div>
-
-<br>
-
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;">
-
-<div style="background:#fff;padding:20px;border-radius:15px;text-align:center;box-shadow:0 5px 20px rgba(0,0,0,.08);">
-
-<h3>💻 CPU Usage</h3>
-<h1 style="color:#2563eb;">18%</h1>
-
-</div>
-
-<div style="background:#fff;padding:20px;border-radius:15px;text-align:center;box-shadow:0 5px 20px rgba(0,0,0,.08);">
-
-<h3>🧠 RAM Usage</h3>
-<h1 style="color:#16a34a;">42%</h1>
-
-</div>
-
-<div style="background:#fff;padding:20px;border-radius:15px;text-align:center;box-shadow:0 5px 20px rgba(0,0,0,.08);">
-
-<h3>⏱ Router Uptime</h3>
-<h1 style="color:#f59e0b;">12 Days</h1>
-
-</div>
-
-</div>
-
-<br>
-
-<div style="background:#fff;padding:20px;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,.08);">
-
-<h3>📅 Today's Summary</h3>
-
-<br>
-
-<p>✅ New Connection : <b>5</b></p>
-<p>💰 Payment Received : <b>৳12,500</b></p>
-<p>❌ Disconnected : <b>2</b></p>
-<p>⚠️ Due Customers : <b>18</b></p>
-<p>📡 Active PPPoE : <b>230</b></p>
-
-</div>
-<br>
-
-<div style="display:grid;grid-template-columns:2fr 1fr;gap:20px;">
-
-<div style="background:#fff;padding:20px;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,.08);">
-
-<h3>🌍 Multi Router Status</h3>
-
-<table width="100%" cellpadding="10">
-
-<tr style="background:#2563eb;color:#fff;">
-<th>Router</th>
-<th>IP</th>
-<th>Status</th>
-<th>Users</th>
-</tr>
-
-<tr>
-<td>RB5009 - Main</td>
-<td>192.168.10.1</td>
-<td style="color:green;">🟢 Online</td>
-<td>230</td>
-</tr>
-
-<tr>
-<td>RB3011 - POP 1</td>
-<td>192.168.20.1</td>
-<td style="color:green;">🟢 Online</td>
-<td>80</td>
-</tr>
-
-<tr>
-<td>RB4011 - POP 2</td>
-<td>192.168.30.1</td>
-<td style="color:red;">🔴 Offline</td>
-<td>0</td>
-</tr>
-
-</table>
-
-</div>
-
-<div style="background:#fff;padding:20px;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,.08);">
-
-<h3>🛡 Security</h3>
-
-<p>✅ API Connected</p>
-<hr>
-<p>🔒 Firewall Protected</p>
-<hr>
-<p>🟢 Backup Completed</p>
-<hr>
-<p>⚠ Failed Login : 2</p>
-<hr>
-<p>🌐 VPN Connected</p>
-
-</div>
-
-</div>
-
-<br>
-
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
-
-<div style="background:#fff;padding:20px;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,.08);">
-
-<h3>📊 Revenue Analytics</h3>
-
-<br>
-
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
-
-<div style="background:#fff;padding:20px;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,.08);">
-
-<h3>📅 Billing Summary</h3>
-
-<table width="100%" cellpadding="10">
-
-<tr>
-<td>Total Invoice</td>
-<td><b>250</b></td>
-</tr>
-
-<tr>
-<td>Paid Invoice</td>
-<td style="color:green;"><b>218</b></td>
-</tr>
-
-<tr>
-<td>Due Invoice</td>
-<td style="color:red;"><b>32</b></td>
-</tr>
-
-<tr>
-<td>Collection Rate</td>
-<td><b>87%</b></td>
-</tr>
-
-</table>
-
-</div>
-
-<div style="background:#fff;padding:20px;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,.08);">
-
-<h3>📨 SMS / WhatsApp Queue</h3>
-
-<table width="100%" cellpadding="10">
-
-<tr>
-<td>SMS Sent Today</td>
-<td>145</td>
-</tr>
-
-<tr>
-<td>Pending SMS</td>
-<td>12</td>
-</tr>
-
-<tr>
-<td>WhatsApp Sent</td>
-<td>48</td>
-</tr>
-
-<tr>
-<td>Failed</td>
-<td style="color:red;">3</td>
-</tr>
-
-</table>
-
-</div>
-
-</div>
-
-<br>
-
-<div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;">
-
-<div style="background:#fff;padding:20px;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,.08);">
-
-<h3>📡 Link Monitoring</h3>
-
-<table width="100%" cellpadding="10">
-
-<tr style="background:#2563eb;color:white;">
-<th>Link</th>
-<th>Status</th>
-</tr>
-
-<tr>
-<td>Main Fiber</td>
-<td style="color:green;">🟢 UP</td>
-</tr>
-
-<tr>
-<td>Backup Fiber</td>
-<td style="color:green;">🟢 UP</td>
-</tr>
-
-<tr>
-<td>POP-1 Wireless</td>
-<td style="color:orange;">🟡 High Latency</td>
-</tr>
-
-<tr>
-<td>POP-2 Fiber</td>
-<td style="color:red;">🔴 Down</td>
-</tr>
-
-</table>
-
-</div>
-
-<div style="background:#fff;padding:20px;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,.08);">
-
-<h3>📝 System Logs</h3>
-
-<div style="height:220px;overflow:auto;">
-
-<p>10:15 - Admin Login Successful</p>
-<hr>
-
-<p>10:18 - Payment Received (Rahim)</p>
-<hr>
-
-<p>10:25 - New Customer Added</p>
-<hr>
-
-<p>10:41 - Router Backup Completed</p>
-<hr>
-
-<p>11:02 - Karim PPPoE Disconnected</p>
-<hr>
-
-<p>11:10 - Settings Updated</p>
-<hr>
-
-<p>11:15 - SMS Sent Successfully</p>
-
-</div>
-
-</div>
-
-</div>
-
-<br>
-
-<div style="background:#fff;padding:20px;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,.08);">
-
-<h3>📈 ISP Health Monitor</h3>
-
-<table width="100%" cellpadding="12">
-
-<tr style="background:#2563eb;color:white;">
-<th>Service</th>
-<th>Status</th>
-<th>Health</th>
-</tr>
-
-<tr>
-<td>PPPoE Server</td>
-<td style="color:green;">Running</td>
-<td>100%</td>
-</tr>
-
-<tr>
-<td>Hotspot</td>
-<td style="color:green;">Running</td>
-<td>100%</td>
-</tr>
-
-<tr>
-<td>DHCP Server</td>
-<td style="color:green;">Running</td>
-<td>100%</td>
-</tr>
-
-<tr>
-<td>DNS</td>
-<td style="color:orange;">Busy</td>
-<td>82%</td>
-</tr>
-
-<tr>
-<td>API Service</td>
-<td style="color:green;">Connected</td>
-<td>100%</td>
-</tr>
-
-</table>
-
-</div>
-<br>
-
-<div style="display:grid;grid-template-columns:2fr 1fr;gap:20px;">
-
-<div style="background:#fff;padding:20px;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,.08);">
-
-<h3>🗺️ Network Overview</h3>
-
-<table width="100%" cellpadding="10">
-
-<tr style="background:#2563eb;color:#fff;">
-<th>POP</th>
-<th>Customers</th>
-<th>Status</th>
-<th>Load</th>
-</tr>
-
-<tr>
-<td>POP-01</td>
-<td>85</td>
-<td style="color:green;">🟢 Online</td>
-<td>72%</td>
-</tr>
-
-<tr>
-<td>POP-02</td>
-<td>63</td>
-<td style="color:green;">🟢 Online</td>
-<td>58%</td>
-</tr>
-
-<tr>
-<td>POP-03</td>
-<td>42</td>
-<td style="color:orange;">🟡 Busy</td>
-<td>89%</td>
-</tr>
-
-<tr>
-<td>POP-04</td>
-<td>60</td>
-<td style="color:red;">🔴 Down</td>
-<td>0%</td>
-</tr>
-
-</table>
-
-</div>
-
-<div style="background:#fff;padding:20px;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,.08);">
-
-<h3>🌤 Weather</h3>
-
-<br>
-
-<h2>☀️ 31°C</h2>
-
-<p>Dhaka, Bangladesh</p>
-
-<hr>
-
-<p>Humidity : 72%</p>
-
-<p>Wind : 10 km/h</p>
-
-<p>Condition : Sunny</p>
-
-</div>
-
-</div>
-
-<br>
-
-<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;">
-
-<div style="background:#fff;padding:20px;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,.08);">
-
-<h3>🏆 Top Package</h3>
-
-<h2 style="color:#2563eb;">30 Mbps</h2>
-
-<p>120 Customers</p>
-
-</div>
-
-<div style="background:#fff;padding:20px;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,.08);">
-
-<h3>💸 Monthly Expense</h3>
-
-<h2 style="color:red;">৳1,25,000</h2>
-
-<p>Electricity, Salary, Fiber</p>
-
-</div>
-
-<div style="background:#fff;padding:20px;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,.08);">
-
-<h3>📦 Inventory</h3>
-
-<p>ONU : 45 pcs</p>
-
-<p>Router : 18 pcs</p>
-
-<p>Switch : 9 pcs</p>
-
-<p>Cable : 3250 Meter</p>
-
-</div>
-
-</div>
-
-<br>
-
-<div style="background:#fff;padding:20px;border-radius:15px;box-shadow:0 5px 20px rgba(0,0,0,.08);">
-
-<h3>👨‍💼 Staff Performance</h3>
-
-<table width="100%" cellpadding="10">
-
-<tr style="background:#2563eb;color:white;">
-
-<th>Staff</th>
-
-<th>New Connection</th>
-
-<th>Collection</th>
-
-<th>Status</th>
-
-</tr>
-
-<tr>
-
-<td>Asif</td>
-
-<td>12</td>
-
-<td>৳25,000</td>
-
-<td style="color:green;">Excellent</td>
-
-</tr>
-
-<tr>
-
-<td>Sakib</td>
-
-<td>9</td>
-
-<td>৳18,500</td>
-
-<td style="color:green;">Good</td>
-
-</tr>
-
-<tr>
-
-<td>Rony</td>
-
-<td>4</td>
-
-<td>৳8,200</td>
-
-<td style="color:orange;">Average</td>
-
-</tr>
-
-</table>
-
-</div>
-
-<br>
-
-<footer style="background:#0f172a;color:white;padding:18px;border-radius:12px;text-align:center;">
-
-<b>SBI INTERNET MANAGEMENT SYSTEM v2.0</b><br>
-
-Powered by MikroTik API | © 2026 SBI INTERNET
-
-</footer>
 
 </div>
 

@@ -3,66 +3,110 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SBI INTERNET Login</title>
+<title>SBI INTERNET - Login</title>
 
 <style>
-body{
+
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
 font-family:Arial,sans-serif;
-background:#0f172a;
+}
+
+body{
+height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-height:100vh;
+background:linear-gradient(135deg,#0f172a,#2563eb);
 }
 
 .login-box{
-background:white;
+width:350px;
+background:#fff;
 padding:30px;
-border-radius:12px;
-width:320px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+.logo{
 text-align:center;
-box-shadow:0 0 20px rgba(0,0,0,.3);
+font-size:30px;
+margin-bottom:10px;
+}
+
+h2{
+text-align:center;
+color:#2563eb;
+margin-bottom:5px;
+}
+
+p{
+text-align:center;
+color:#666;
+margin-bottom:20px;
 }
 
 input{
 width:100%;
-padding:12px;
+padding:13px;
 margin:10px 0;
-border:1px solid #ccc;
+border:1px solid #ddd;
 border-radius:8px;
-box-sizing:border-box;
+font-size:15px;
 }
 
 button{
 width:100%;
-padding:12px;
-background:#2563eb;
-color:white;
+padding:13px;
 border:none;
 border-radius:8px;
+background:#2563eb;
+color:white;
 font-size:16px;
 cursor:pointer;
+transition:.3s;
 }
 
 button:hover{
 background:#1d4ed8;
 }
+
+.footer{
+margin-top:20px;
+text-align:center;
+font-size:13px;
+color:#888;
+}
+
 </style>
 
 </head>
+
 <body>
 
 <div class="login-box">
 
+<div class="logo">🌐</div>
+
 <h2>SBI INTERNET</h2>
-<p>Admin Login</p>
 
-<input type="text" id="user" placeholder="Username">
+<p>ISP Management System</p>
 
-<input type="password" id="pass" placeholder="Password">
+<input id="user" type="text" placeholder="Username">
 
-<button onclick="login()">Login</button>
+<input id="pass" type="password" placeholder="Password">
+
+<button onclick="login()">LOGIN</button>
+
+<div class="footer">
+
+Version 1.0 <br>
+
+© SBI INTERNET
+
+</div>
 
 </div>
 
@@ -70,12 +114,13 @@ background:#1d4ed8;
 
 function login(){
 
-let u=document.getElementById("user").value.trim();
-let p=document.getElementById("pass").value.trim();
+let u=document.getElementById("user").value;
 
-if(u==="admin" && p==="1234"){
+let p=document.getElementById("pass").value;
 
-window.location.href="dashboard.html";
+if(u=="admin" && p=="1234"){
+
+window.location="dashboard.html";
 
 }else{
 
