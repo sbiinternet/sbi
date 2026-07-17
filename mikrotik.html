@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MikroTik Dashboard</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#eef2f7;
+}
+
+.header{
+background:#0f172a;
+color:white;
+padding:18px;
+text-align:center;
+font-size:24px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,.15);
+}
+
+.card h3{
+margin:0 0 10px;
+color:#2563eb;
+}
+
+button{
+width:100%;
+padding:12px;
+border:none;
+border-radius:8px;
+background:#2563eb;
+color:white;
+margin-top:8px;
+cursor:pointer;
+}
+
+table{
+width:100%;
+background:white;
+margin:20px;
+border-collapse:collapse;
+}
+
+th{
+background:#2563eb;
+color:white;
+padding:12px;
+}
+
+td{
+padding:10px;
+text-align:center;
+border-bottom:1px solid #ddd;
+}
+
+.online{
+color:green;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+🌐 MikroTik Control Panel
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>PPPoE Users</h3>
+<h2>250</h2>
+</div>
+
+<div class="card">
+<h3>Active Users</h3>
+<h2 style="color:green;">180</h2>
+</div>
+
+<div class="card">
+<h3>Offline Users</h3>
+<h2 style="color:red;">70</h2>
+</div>
+
+<div class="card">
+<h3>Router Status</h3>
+<h2 style="color:green;">🟢 Online</h2>
+</div>
+
+</div>
+
+<table>
+
+<tr>
+
+<th>User</th>
+
+<th>IP</th>
+
+<th>Speed</th>
+
+<th>Status</th>
+
+</tr>
+
+<tr>
+
+<td>Rahim</td>
+
+<td>192.168.10.10</td>
+
+<td>30 Mbps</td>
+
+<td class="online">Online</td>
+
+</tr>
+
+<tr>
+
+<td>Karim</td>
+
+<td>192.168.10.20</td>
+
+<td>20 Mbps</td>
+
+<td style="color:red;">Offline</td>
+
+</tr>
+
+</table>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>Quick Actions</h3>
+
+<button>Ping Router</button>
+
+<button>Reboot Router</button>
+
+<button>Reload PPPoE</button>
+
+<button>Open Queue</button>
+
+<button>Interfaces</button>
+
+</div>
+
+<div class="card">
+
+<h3>Traffic Monitor</h3>
+
+<progress value="65" max="100" style="width:100%;height:25px;"></progress>
+
+<p>Download : 650 Mbps</p>
+
+<p>Upload : 180 Mbps</p>
+
+</div>
+
+</div>
+
+</body>
+</html>

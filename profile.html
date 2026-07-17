@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Customer Profile</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#f4f6f9;
+}
+
+.header{
+background:#2563eb;
+color:white;
+padding:18px;
+text-align:center;
+font-size:24px;
+font-weight:bold;
+}
+
+.profile{
+width:95%;
+max-width:1000px;
+margin:20px auto;
+background:white;
+border-radius:12px;
+box-shadow:0 0 10px rgba(0,0,0,.15);
+overflow:hidden;
+}
+
+.cover{
+height:180px;
+background:linear-gradient(90deg,#2563eb,#0f172a);
+}
+
+.photo{
+text-align:center;
+margin-top:-70px;
+}
+
+.photo img{
+width:140px;
+height:140px;
+border-radius:50%;
+border:6px solid white;
+}
+
+.name{
+text-align:center;
+font-size:28px;
+font-weight:bold;
+margin-top:10px;
+}
+
+.status{
+text-align:center;
+margin-top:8px;
+font-size:18px;
+color:green;
+font-weight:bold;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
+padding:20px;
+}
+
+.card{
+background:#f7f7f7;
+padding:15px;
+border-radius:10px;
+}
+
+.card h3{
+margin:0 0 10px;
+color:#2563eb;
+}
+
+.card p{
+margin:6px 0;
+}
+
+.buttons{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+padding:20px;
+justify-content:center;
+}
+
+button{
+padding:12px 18px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+color:white;
+font-weight:bold;
+}
+
+.edit{background:#2563eb;}
+.speed{background:#16a34a;}
+.suspend{background:#dc2626;}
+.enable{background:#0ea5e9;}
+.invoice{background:#7c3aed;}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+Customer Profile
+</div>
+
+<div class="profile">
+
+<div class="cover"></div>
+
+<div class="photo">
+<img src="https://via.placeholder.com/140">
+</div>
+
+<div class="name">
+Rahim Hossain
+</div>
+
+<div class="status">
+🟢 Online
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>Basic Information</h3>
+<p><b>Customer ID:</b> 1001</p>
+<p><b>Mobile:</b> 01700000000</p>
+<p><b>Email:</b> demo@gmail.com</p>
+<p><b>Address:</b> Mirpur, Dhaka</p>
+</div>
+
+<div class="card">
+<h3>Internet Information</h3>
+<p><b>Package:</b> 30 Mbps</p>
+<p><b>Bill:</b> ৳600</p>
+<p><b>PPPoE:</b> rahim01</p>
+<p><b>Status:</b> Active</p>
+</div>
+
+<div class="card">
+<h3>Connection</h3>
+<p><b>Join Date:</b> 01-01-2026</p>
+<p><b>Router:</b> MikroTik</p>
+<p><b>IP:</b> 192.168.10.10</p>
+<p><b>MAC:</b> XX:XX:XX:XX</p>
+</div>
+
+</div>
+
+<div class="buttons">
+
+<button class="edit">✏ Edit</button>
+
+<button class="speed">⚡ Change Speed</button>
+
+<button class="suspend">🚫 Suspend</button>
+
+<button class="enable">✅ Enable</button>
+
+<button class="invoice">🧾 Invoice</button>
+
+</div>
+
+</div>
+
+</body>
+</html<!-- Bill History -->
+
+<div class="grid">
+
+<div class="card">
+
+<h3>📄 Bill History</h3>
+
+<table width="100%" border="1" cellspacing="0" cellpadding="8">
+
+<tr>
+
+<th>Month</th>
+
+<th>Bill</th>
+
+<th>Status</th>
+
+</tr>
+
+<tr>
+
+<td>January</td>
+
+<td>৳600</td>
+
+<td style="color:green;">Paid</td>
+
+</tr>
+
+<tr>
+
+<td>February</td>
+
+<td>৳600</td>
+
+<td style="color:red;">Due</td>
+
+</tr>
+
+<tr>
+
+<td>March</td>
+
+<td>৳600</td>
+
+<td style="color:green;">Paid</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<div class="card">
+
+<h3>💳 Payment History</h3>
+
+<table width="100%" border="1" cellspacing="0" cellpadding="8">
+
+<tr>
+
+<th>Date</th>
+
+<th>Method</th>
+
+<th>Amount</th>
+
+</tr>
+
+<tr>
+
+<td>05-01-2026</td>
+
+<td>bKash</td>
+
+<td>৳600</td>
+
+</tr>
+
+<tr>
+
+<td>05-03-2026</td>
+
+<td>Nagad</td>
+
+<td>৳600</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>🆔 NID Documents</h3>
+
+<p>NID Front</p>
+
+<img src="https://via.placeholder.com/300x180">
+
+<br><br>
+
+<p>NID Back</p>
+
+<img src="https://via.placeholder.com/300x180">
+
+</div>
+
+<div class="card">
+
+<h3>📍 Google Maps</h3>
+
+<p>
+
+<a href="#">Open Customer Location</a>
+
+</p>
+
+<hr><br>
+
+<h3>🌐 Network Status</h3>
+
+<p>Current IP : 192.168.10.10</p>
+
+<p>MAC : XX:XX:XX:XX</p>
+
+<p>Current Speed : 30 Mbps</p>
+
+<p style="color:green;font-weight:bold;">
+
+🟢 Online
+
+</p>
+
+</div>
+
+</div<!-- Profile Tools -->
+
+<div class="grid">
+
+<div class="card">
+
+<h3>📷 Profile & Cover Photo</h3>
+
+<label>Profile Photo</label>
+<input type="file">
+
+<br><br>
+
+<label>Cover Photo</label>
+<input type="file">
+
+<br><br>
+
+<button class="edit">Upload Photo</button>
+
+</div>
+
+<div class="card">
+
+<h3>📊 Internet Usage</h3>
+
+<p>Today's Usage : <b>3.5 GB</b></p>
+<p>This Month : <b>98 GB</b></p>
+
+<progress value="98" max="200" style="width:100%;height:20px;"></progress>
+
+</div>
+
+</div>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>🟢 Live Connection</h3>
+
+<p><b>Status :</b> Online</p>
+
+<p><b>Last Login :</b> 17-07-2026 08:35 AM</p>
+
+<p><b>Last Logout :</b> 16-07-2026 11:45 PM</p>
+
+<p><b>Current Speed :</b> 30 Mbps</p>
+
+<p><b>IP :</b> 192.168.10.10</p>
+
+<p><b>MAC :</b> XX:XX:XX:XX</p>
+
+</div>
+
+<div class="card">
+
+<h3>⚙ Quick Actions</h3>
+
+<button class="edit">✏ Edit</button><br><br>
+
+<button class="speed">⚡ Change Speed</button><br><br>
+
+<button class="enable">✅ Enable</button><br><br>
+
+<button class="suspend">🚫 Suspend</button><br><br>
+
+<button class="invoice">🧾 Print Invoice</button><br><br>
+
+<button class="invoice">📄 Download PDF</button><br><br>
+
+<button class="speed">📱 Send SMS</button><br><br>
+
+<button class="edit">💬 WhatsApp</button>
+
+</div>
+
+</div>
+
+<div class="grid">
+
+<div class="card">
+
+<h3>🔔 Notifications</h3>
+
+<ul>
+
+<li>✔ Bill Paid Successfully</li>
+
+<li>✔ Customer Online</li>
+
+<li>✔ Package Changed</li>
+
+<li>✔ SMS Delivered</li>
+
+<li>✔ Last Backup Successful</li>
+
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>📌 Notes</h3>
+
+<textarea style="width:100%;height:150px;border:1px solid #ccc;border-radius:8px;padding:10px;" placeholder="Write customer notes..."></textarea>
+
+</div>
+
+</div>

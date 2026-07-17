@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Billing</title>
+
+<style>
+body{
+font-family:Arial;
+background:#f4f6fa;
+margin:0;
+}
+
+.header{
+background:#2563eb;
+color:white;
+padding:18px;
+font-size:24px;
+text-align:center;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 0 10px #ddd;
+text-align:center;
+}
+
+.card h2{
+margin:10px 0;
+color:#2563eb;
+}
+
+table{
+width:96%;
+margin:20px auto;
+background:white;
+border-collapse:collapse;
+box-shadow:0 0 10px #ddd;
+}
+
+th{
+background:#2563eb;
+color:white;
+padding:12px;
+}
+
+td{
+padding:10px;
+text-align:center;
+border-bottom:1px solid #ddd;
+}
+
+button{
+padding:8px 15px;
+border:none;
+border-radius:6px;
+background:#2563eb;
+color:white;
+cursor:pointer;
+}
+
+.paid{
+color:green;
+font-weight:bold;
+}
+
+.due{
+color:red;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+💰 Billing Management
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>Total Bill</h3>
+<h2>৳ 4,80,000</h2>
+</div>
+
+<div class="card">
+<h3>Today's Collection</h3>
+<h2>৳ 26,000</h2>
+</div>
+
+<div class="card">
+<h3>Due Amount</h3>
+<h2 style="color:red;">৳ 62,000</h2>
+</div>
+
+<div class="card">
+<h3>Advance Balance</h3>
+<h2 style="color:green;">৳ 15,500</h2>
+</div>
+
+</div>
+
+<table>
+
+<tr>
+
+<th>ID</th>
+<th>Name</th>
+<th>Package</th>
+<th>Bill</th>
+<th>Status</th>
+<th>Action</th>
+
+</tr>
+
+<tr>
+
+<td>1001</td>
+<td>Rahim</td>
+<td>30 Mbps</td>
+<td>৳600</td>
+<td class="paid">Paid</td>
+<td><button>Receipt</button></td>
+
+</tr>
+
+<tr>
+
+<td>1002</td>
+<td>Karim</td>
+<td>20 Mbps</td>
+<td>৳500</td>
+<td class="due">Due</td>
+<td><button>Collect</button></td>
+
+</tr>
+
+<tr>
+
+<td>1003</td>
+<td>Hasan</td>
+<td>50 Mbps</td>
+<td>৳1000</td>
+<td class="paid">Paid</td>
+<td><button>Receipt</button></td>
+
+</tr>
+
+</table>
+
+</body>
+</html>

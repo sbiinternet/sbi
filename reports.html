@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reports - SBI INTERNET</title>
+
+<style>
+body{
+font-family:Arial;
+margin:0;
+background:#f4f6f9;
+}
+
+.header{
+background:#2563eb;
+color:white;
+padding:18px;
+text-align:center;
+font-size:24px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 2px 8px rgba(0,0,0,.15);
+}
+
+.card h3{
+margin:0;
+color:#2563eb;
+}
+
+.card h2{
+margin-top:10px;
+}
+
+table{
+width:95%;
+margin:20px auto;
+border-collapse:collapse;
+background:white;
+}
+
+th{
+background:#2563eb;
+color:white;
+padding:12px;
+}
+
+td{
+padding:10px;
+text-align:center;
+border-bottom:1px solid #ddd;
+}
+
+button{
+padding:10px 15px;
+border:none;
+background:#2563eb;
+color:white;
+border-radius:6px;
+margin:5px;
+cursor:pointer;
+}
+
+.green{color:green;}
+.red{color:red;}
+
+.footer{
+text-align:center;
+padding:20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+📊 Reports Dashboard
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>Today's Income</h3>
+<h2 class="green">৳25,000</h2>
+</div>
+
+<div class="card">
+<h3>Today's Expense</h3>
+<h2 class="red">৳3,500</h2>
+</div>
+
+<div class="card">
+<h3>Monthly Income</h3>
+<h2>৳4,80,000</h2>
+</div>
+
+<div class="card">
+<h3>Profit</h3>
+<h2 class="green">৳3,60,000</h2>
+</div>
+
+</div>
+
+<table>
+
+<tr>
+<th>Date</th>
+<th>Income</th>
+<th>Expense</th>
+<th>Profit</th>
+</tr>
+
+<tr>
+<td>17-07-2026</td>
+<td>৳25,000</td>
+<td>৳3,500</td>
+<td>৳21,500</td>
+</tr>
+
+<tr>
+<td>16-07-2026</td>
+<td>৳18,000</td>
+<td>৳2,200</td>
+<td>৳15,800</td>
+</tr>
+
+<tr>
+<td>15-07-2026</td>
+<td>৳21,000</td>
+<td>৳2,800</td>
+<td>৳18,200</td>
+</tr>
+
+</table>
+
+<div class="footer">
+
+<button>📄 Export PDF</button>
+
+<button>📊 Export Excel</button>
+
+<button>🖨 Print Report</button>
+
+</div>
+
+</body>
+</html>

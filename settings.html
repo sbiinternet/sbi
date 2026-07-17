@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Settings</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#f5f7fb;
+}
+
+.header{
+background:#2563eb;
+color:white;
+padding:18px;
+text-align:center;
+font-size:24px;
+}
+
+.container{
+width:95%;
+margin:auto;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+margin-bottom:20px;
+border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,.15);
+}
+
+.card h2{
+color:#2563eb;
+margin-bottom:15px;
+}
+
+input,select{
+width:100%;
+padding:10px;
+margin:8px 0;
+border:1px solid #ccc;
+border-radius:6px;
+}
+
+button{
+padding:12px 18px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+margin-top:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+⚙ Settings
+</div>
+
+<div class="container">
+
+<div class="card">
+
+<h2>🏢 Company Information</h2>
+
+<input type="text" placeholder="Company Name">
+
+<input type="text" placeholder="Company Address">
+
+<input type="text" placeholder="Company Phone">
+
+<input type="email" placeholder="Company Email">
+
+<label>Company Logo</label>
+
+<input type="file">
+
+<label>Company Cover</label>
+
+<input type="file">
+
+<button>Save Company Info</button>
+
+</div>
+
+<div class="card">
+
+<h2>🌙 Theme</h2>
+
+<select>
+
+<option>Light Mode</option>
+
+<option>Dark Mode</option>
+
+</select>
+
+<button>Save Theme</button>
+
+</div>
+
+<div class="card">
+
+<h2>🌐 Language</h2>
+
+<select>
+
+<option>English</option>
+
+<option>বাংলা</option>
+
+</select>
+
+<button>Save Language</button>
+
+</div>
+
+<div class="card">
+
+<h2>📧 SMTP Email</h2>
+
+<input placeholder="SMTP Host">
+
+<input placeholder="SMTP Port">
+
+<input placeholder="Email">
+
+<input placeholder="Password">
+
+<button>Save SMTP</button>
+
+</div>
+
+<div class="card">
+
+<h2>📱 SMS API</h2>
+
+<input placeholder="API Key">
+
+<input placeholder="Sender ID">
+
+<button>Save SMS API</button>
+
+</div>
+
+<div class="card">
+
+<h2>🌐 MikroTik API</h2>
+
+<input placeholder="Router IP">
+
+<input placeholder="Username">
+
+<input placeholder="Password">
+
+<input placeholder="API Port">
+
+<button>Connect MikroTik</button>
+
+</div>
+
+<div class="card">
+
+<h2>💾 Backup & Restore</h2>
+
+<button>Create Backup</button>
+
+<button>Restore Backup</button>
+
+</div>
+
+<div class="card">
+
+<h2>🔒 Security</h2>
+
+<button>Change Password</button>
+
+<button>Enable 2FA</button>
+
+<button>Logout All Devices</button>
+
+</div>
+
+</div>
+
+</body>
+</html>

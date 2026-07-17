@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Payment Gateway</title>
+
+<style>
+
+body{
+font-family:Arial;
+margin:0;
+background:#f4f6f9;
+}
+
+.header{
+background:#2563eb;
+color:#fff;
+padding:18px;
+text-align:center;
+font-size:24px;
+font-weight:bold;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.card{
+background:#fff;
+padding:20px;
+border-radius:12px;
+box-shadow:0 2px 8px rgba(0,0,0,.15);
+text-align:center;
+}
+
+.card h3{
+margin:10px 0;
+color:#2563eb;
+}
+
+button{
+width:100%;
+padding:12px;
+border:none;
+border-radius:8px;
+background:#2563eb;
+color:white;
+font-size:15px;
+cursor:pointer;
+margin-top:10px;
+}
+
+table{
+width:95%;
+margin:20px auto;
+background:#fff;
+border-collapse:collapse;
+box-shadow:0 2px 8px rgba(0,0,0,.15);
+}
+
+th{
+background:#2563eb;
+color:white;
+padding:12px;
+}
+
+td{
+padding:10px;
+text-align:center;
+border-bottom:1px solid #ddd;
+}
+
+.success{
+color:green;
+font-weight:bold;
+}
+
+.pending{
+color:red;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+💳 Payment Management
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>📱 bKash</h3>
+<p>Receive customer payments</p>
+<button>bKash Payment</button>
+</div>
+
+<div class="card">
+<h3>📱 Nagad</h3>
+<p>Receive customer payments</p>
+<button>Nagad Payment</button>
+</div>
+
+<div class="card">
+<h3>🚀 Rocket</h3>
+<p>Receive customer payments</p>
+<button>Rocket Payment</button>
+</div>
+
+<div class="card">
+<h3>🌐 SSLCommerz</h3>
+<p>Online Payment Gateway</p>
+<button>SSL Payment</button>
+</div>
+
+<div class="card">
+<h3>💵 Manual Payment</h3>
+<p>Cash Collection</p>
+<button>Collect Cash</button>
+</div>
+
+<div class="card">
+<h3>🖨 Receipt</h3>
+<p>Print Customer Receipt</p>
+<button>Print Receipt</button>
+</div>
+
+</div>
+
+<table>
+
+<tr>
+<th>Invoice</th>
+<th>Customer</th>
+<th>Method</th>
+<th>Amount</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td>#1001</td>
+<td>Rahim</td>
+<td>bKash</td>
+<td>৳600</td>
+<td class="success">Paid</td>
+</tr>
+
+<tr>
+<td>#1002</td>
+<td>Karim</td>
+<td>Nagad</td>
+<td>৳500</td>
+<td class="pending">Pending</td>
+</tr>
+
+<tr>
+<td>#1003</td>
+<td>Hasan</td>
+<td>Cash</td>
+<td>৳1000</td>
+<td class="success">Paid</td>
+</tr>
+
+</table>
+
+</body>
+</html>
